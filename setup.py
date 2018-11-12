@@ -3,8 +3,8 @@
 from distutils.core import setup
 import setuptools
 
-setup(name='azure-cosmos',
-      version='3.0.1',
+setup(name='azure-cosmos-ux',
+      version='0.0.1',
       description='Azure Cosmos Python SDK',
       author="Microsoft",
       author_email="askdocdb@microsoft.com",
