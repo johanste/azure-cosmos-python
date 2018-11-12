@@ -25,13 +25,13 @@ import six
 import unittest
 import time
 
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
-import azure.cosmos.errors as errors
-import azure.cosmos.global_endpoint_manager as global_endpoint_manager
-import azure.cosmos.endpoint_discovery_retry_policy as endpoint_discovery_retry_policy
-import azure.cosmos.retry_utility as retry_utility
-from azure.cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.errors as errors
+import azure.internal_cosmos.global_endpoint_manager as global_endpoint_manager
+import azure.internal_cosmos.endpoint_discovery_retry_policy as endpoint_discovery_retry_policy
+import azure.internal_cosmos.retry_utility as retry_utility
+from azure.internal_cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
 import test.test_config as test_config
 
 #IMPORTANT NOTES: 

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
 import test.test_config as test_config
 
 class EncodingTest(unittest.TestCase):

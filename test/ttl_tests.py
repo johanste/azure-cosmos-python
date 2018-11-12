@@ -22,9 +22,9 @@
 import unittest
 import time
 
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.errors as errors
-from azure.cosmos.http_constants import StatusCodes
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.errors as errors
+from azure.internal_cosmos.http_constants import StatusCodes
 import test.test_config as test_config
 
 

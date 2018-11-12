@@ -36,19 +36,19 @@ if six.PY2:
 else:
     import urllib.parse as urllib
 import uuid
-import azure.cosmos.base as base
-import azure.cosmos.consistent_hash_ring as consistent_hash_ring
-import azure.cosmos.documents as documents
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.errors as errors
-import azure.cosmos.hash_partition_resolver as hash_partition_resolver
-from azure.cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
-import azure.cosmos.murmur_hash as murmur_hash
-import azure.cosmos.range_partition_resolver as range_partition_resolver
-import azure.cosmos.range as partition_range
+import azure.internal_cosmos.base as base
+import azure.internal_cosmos.consistent_hash_ring as consistent_hash_ring
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.errors as errors
+import azure.internal_cosmos.hash_partition_resolver as hash_partition_resolver
+from azure.internal_cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
+import azure.internal_cosmos.murmur_hash as murmur_hash
+import azure.internal_cosmos.range_partition_resolver as range_partition_resolver
+import azure.internal_cosmos.range as partition_range
 import test.test_config as test_config
 import test.test_partition_resolver as test_partition_resolver
-import azure.cosmos.base as base
+import azure.internal_cosmos.base as base
 
 
 #IMPORTANT NOTES: 

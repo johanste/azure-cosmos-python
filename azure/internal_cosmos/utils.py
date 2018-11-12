@@ -19,24 +19,28 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 
-import unittest
-import azure.internal_cosmos.utils as utils
+"""Internal Helper functions in the Azure Cosmos database service.
+"""
+
 import platform
+import re as re
 import azure.internal_cosmos.http_constants as http_constants
 
-class UtilsTests(unittest.TestCase):
-    """Utils Tests
-    """
+def _get_user_agent():
+    os_name = _safe_user_agent_header(platform.system())
+    os_version = _safe_user_agent_header(platform.release())
+    python_version = _safe_user_agent_header(platform.python_version())
 
-    def test_user_agent(self):
-        user_agent = utils._get_user_agent()
+    user_agent = "{}/{} Python/{} {}/{}".format(os_name, os_version,
+        python_version,
+        http_constants.Versions.SDKName, http_constants.Versions.SDKVersion)
+    return user_agent
 
-        expected_user_agent = "{}/{} Python/{} azure-cosmos/{}".format(
-            platform.system(), platform.release(), platform.python_version(), 
-            http_constants.Versions.SDKVersion
-        )
-
-        self.assertEqual(user_agent, expected_user_agent)   
-        
-if __name__ == "__main__":
-    unittest.main()
+def _safe_user_agent_header(s):
+    if s is None:
+        s = "unknown"
+    # remove all white spaces
+    s = re.sub(r"\s+", '', s)
+    if not s:
+        s = "unknown"
+    return s

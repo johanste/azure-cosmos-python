@@ -1,9 +1,9 @@
 import unittest
 import uuid
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
-from azure.cosmos.vector_session_token import VectorSessionToken
-from azure.cosmos.errors import CosmosError
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
+from azure.internal_cosmos.vector_session_token import VectorSessionToken
+from azure.internal_cosmos.errors import CosmosError
 
 class SessionTokenUnitTest(unittest.TestCase):
     """Test to ensure escaping of non-ascii characters from partition key"""

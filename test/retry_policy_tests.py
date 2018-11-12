@@ -21,12 +21,12 @@
 
 import unittest
 import uuid
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
-import azure.cosmos.errors as errors
-import azure.cosmos.retry_options as retry_options
-from azure.cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
-import azure.cosmos.retry_utility as retry_utility
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.errors as errors
+import azure.internal_cosmos.retry_options as retry_options
+from azure.internal_cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
+import azure.internal_cosmos.retry_utility as retry_utility
 import test.test_config as test_config
 
 

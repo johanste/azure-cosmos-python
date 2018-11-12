@@ -23,13 +23,13 @@ import unittest
 import time
 # from types import *
 
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
-import azure.cosmos.errors as errors
-import azure.cosmos.base as base
-import azure.cosmos.http_constants as http_constants
-import azure.cosmos.constants as constants
-import azure.cosmos.session as session
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.errors as errors
+import azure.internal_cosmos.base as base
+import azure.internal_cosmos.http_constants as http_constants
+import azure.internal_cosmos.constants as constants
+import azure.internal_cosmos.session as session
 import test.test_config as test_config
 
 class Test_session_container(unittest.TestCase):

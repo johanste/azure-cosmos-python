@@ -1,6 +1,6 @@
-import azure.cosmos.documents as documents
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.errors as errors
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.errors as errors
 
 import requests
 import traceback

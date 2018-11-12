@@ -22,13 +22,13 @@
 import unittest
 import json
 
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.documents as documents
-import azure.cosmos.errors as errors
-import azure.cosmos.constants as constants
-from azure.cosmos.http_constants import StatusCodes
-import azure.cosmos.global_endpoint_manager as global_endpoint_manager
-import azure.cosmos.retry_utility as retry_utility
+import azure.internal_cosmos.cosmos_client as cosmos_client
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.errors as errors
+import azure.internal_cosmos.constants as constants
+from azure.internal_cosmos.http_constants import StatusCodes
+import azure.internal_cosmos.global_endpoint_manager as global_endpoint_manager
+import azure.internal_cosmos.retry_utility as retry_utility
 import test.test_config as test_config
 
 location_changed = False

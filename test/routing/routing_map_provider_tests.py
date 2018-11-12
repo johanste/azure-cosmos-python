@@ -20,9 +20,9 @@
 #SOFTWARE.
 
 import unittest
-from azure.cosmos.routing.routing_map_provider import _SmartRoutingMapProvider
-from azure.cosmos.routing.routing_map_provider import _CollectionRoutingMap
-from azure.cosmos.routing import routing_range as routing_range
+from azure.internal_cosmos.routing.routing_map_provider import _SmartRoutingMapProvider
+from azure.internal_cosmos.routing.routing_map_provider import _CollectionRoutingMap
+from azure.internal_cosmos.routing import routing_range as routing_range
  
 class RoutingMapProviderTests(unittest.TestCase):
 

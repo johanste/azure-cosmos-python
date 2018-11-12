@@ -1,7 +1,7 @@
 import uuid
 import time
-import azure.cosmos.errors as errors
-from azure.cosmos.http_constants import StatusCodes
+import azure.internal_cosmos.errors as errors
+from azure.internal_cosmos.http_constants import StatusCodes
 
 class Worker(object):
     def __init__(self, client, database_name, collection_name):

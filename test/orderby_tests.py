@@ -21,10 +21,10 @@
 
 import unittest
 import uuid
-import azure.cosmos.documents as documents
-import azure.cosmos.cosmos_client as cosmos_client
-from azure.cosmos import query_iterable
-import azure.cosmos.base as base
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.cosmos_client as cosmos_client
+from azure.internal_cosmos import query_iterable
+import azure.internal_cosmos.base as base
 from six.moves import xrange
 import test.test_config as test_config
 

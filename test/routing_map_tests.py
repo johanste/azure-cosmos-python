@@ -20,10 +20,10 @@
 #SOFTWARE.
 
 import unittest
-import azure.cosmos.documents as documents
-import azure.cosmos.cosmos_client as cosmos_client
-from azure.cosmos.routing.routing_map_provider import _PartitionKeyRangeCache
-from azure.cosmos.routing import routing_range as routing_range
+import azure.internal_cosmos.documents as documents
+import azure.internal_cosmos.cosmos_client as cosmos_client
+from azure.internal_cosmos.routing.routing_map_provider import _PartitionKeyRangeCache
+from azure.internal_cosmos.routing import routing_range as routing_range
 import test.test_config as test_config
 
 #IMPORTANT NOTES:
