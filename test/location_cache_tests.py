@@ -3,15 +3,15 @@ import uuid
 import threading
 from time import sleep
 
-from azure.internal_cosmos.http_constants import ResourceType
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
-from azure.internal_cosmos.request_object import _RequestObject
-from azure.internal_cosmos.location_cache import LocationCache
-from azure.internal_cosmos.global_endpoint_manager import _GlobalEndpointManager
-import azure.internal_cosmos.errors as errors
-from azure.internal_cosmos.http_constants import StatusCodes, SubStatusCodes, HttpHeaders
-import azure.internal_cosmos.retry_utility as retry_utility
+from internal.cosmos.http_constants import ResourceType
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
+from internal.cosmos.request_object import _RequestObject
+from internal.cosmos.location_cache import LocationCache
+from internal.cosmos.global_endpoint_manager import _GlobalEndpointManager
+import internal.cosmos.errors as errors
+from internal.cosmos.http_constants import StatusCodes, SubStatusCodes, HttpHeaders
+import internal.cosmos.retry_utility as retry_utility
 import six
 
 class RefreshThread(threading.Thread):

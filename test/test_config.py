@@ -20,7 +20,7 @@
 #SOFTWARE.
 
 import os
-import azure.internal_cosmos.documents as documents
+import internal.cosmos.documents as documents
 try:
     import urllib3
     urllib3.disable_warnings()

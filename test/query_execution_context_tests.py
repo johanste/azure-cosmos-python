@@ -22,10 +22,10 @@
 import unittest
 import uuid
 from six.moves import xrange
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.cosmos_client as cosmos_client
-from azure.internal_cosmos.execution_context import base_execution_context as base_execution_context
-import azure.internal_cosmos.base as base
+import internal.cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
+from internal.cosmos.execution_context import base_execution_context as base_execution_context
+import internal.cosmos.base as base
 import test.test_config as test_config
 
 #IMPORTANT NOTES:

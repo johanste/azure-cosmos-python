@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from azure.internal_cosmos.http_constants import HttpHeaders
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
+from internal.cosmos.http_constants import HttpHeaders
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
 import test.test_config as test_config
-import azure.internal_cosmos.errors as errors
-from azure.internal_cosmos.http_constants import StatusCodes, SubStatusCodes, HttpHeaders
-import azure.internal_cosmos.synchronized_request as synchronized_request
-import azure.internal_cosmos.retry_utility as retry_utility
+import internal.cosmos.errors as errors
+from internal.cosmos.http_constants import StatusCodes, SubStatusCodes, HttpHeaders
+import internal.cosmos.synchronized_request as synchronized_request
+import internal.cosmos.retry_utility as retry_utility
 
 class SessionTests(unittest.TestCase):
     """Test to ensure escaping of non-ascii characters from partition key"""

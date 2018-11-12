@@ -27,10 +27,10 @@ import uuid
 from six import with_metaclass
 from six.moves import xrange
 
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
 import test.test_config as test_config
-from azure.internal_cosmos.errors import HTTPFailure
+from internal.cosmos.errors import HTTPFailure
 
 class _config:
     host = test_config._test_config.host

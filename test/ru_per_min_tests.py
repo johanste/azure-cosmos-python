@@ -20,10 +20,10 @@
 # SOFTWARE.
 
 import unittest
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.cosmos_client as cosmos_client
-from azure.internal_cosmos import query_iterable
-import azure.internal_cosmos.base as base
+import internal.cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
+from internal.cosmos import query_iterable
+import internal.cosmos.base as base
 import test.test_config as test_config
 
 # IMPORTANT NOTES:

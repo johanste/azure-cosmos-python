@@ -1,14 +1,14 @@
 import unittest
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.errors as errors
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
+import internal.cosmos.errors as errors
 from requests.exceptions import ConnectionError
-from azure.internal_cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
-import azure.internal_cosmos.retry_utility as retry_utility
-import azure.internal_cosmos.endpoint_discovery_retry_policy as endpoint_discovery_retry_policy
-from azure.internal_cosmos.request_object import _RequestObject
-import azure.internal_cosmos.global_endpoint_manager as global_endpoint_manager
-import azure.internal_cosmos.http_constants as http_constants
+from internal.cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
+import internal.cosmos.retry_utility as retry_utility
+import internal.cosmos.endpoint_discovery_retry_policy as endpoint_discovery_retry_policy
+from internal.cosmos.request_object import _RequestObject
+import internal.cosmos.global_endpoint_manager as global_endpoint_manager
+import internal.cosmos.http_constants as http_constants
 
 class TestStreamingFailover(unittest.TestCase):
 

@@ -20,9 +20,9 @@
 #SOFTWARE.
 
 import unittest
-from azure.internal_cosmos.routing.collection_routing_map import _CollectionRoutingMap
-import azure.internal_cosmos.routing.routing_range as routing_range
-from azure.internal_cosmos.routing.routing_map_provider import _PartitionKeyRangeCache
+from internal.cosmos.routing.collection_routing_map import _CollectionRoutingMap
+import internal.cosmos.routing.routing_range as routing_range
+from internal.cosmos.routing.routing_map_provider import _PartitionKeyRangeCache
 
 class CollectionRoutingMapTests(unittest.TestCase):
 

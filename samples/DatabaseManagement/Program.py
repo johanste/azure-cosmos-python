@@ -1,6 +1,6 @@
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.errors as errors
+import internal.cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.errors as errors
 
 import samples.Shared.config as cfg
 

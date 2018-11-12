@@ -2,14 +2,14 @@ import json
 import os.path
 import unittest
 import uuid
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.errors as errors
-import azure.internal_cosmos.base as base
-import azure.internal_cosmos.constants as constants
-import azure.internal_cosmos.retry_options as retry_options
-from azure.internal_cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
-import azure.internal_cosmos.retry_utility as retry_utility
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
+import internal.cosmos.errors as errors
+import internal.cosmos.base as base
+import internal.cosmos.constants as constants
+import internal.cosmos.retry_options as retry_options
+from internal.cosmos.http_constants import HttpHeaders, StatusCodes, SubStatusCodes
+import internal.cosmos.retry_utility as retry_utility
 import test.test_config as test_config
 
 class MultiMasterTests(unittest.TestCase):

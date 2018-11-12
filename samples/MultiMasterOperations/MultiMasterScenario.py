@@ -2,8 +2,8 @@ from Configurations import Configurations
 from ConflictWorker import ConflictWorker
 from Worker import Worker
 from multiprocessing.pool import ThreadPool
-import azure.internal_cosmos.documents as documents
-import azure.internal_cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
 
 class MultiMasterScenario(object):
     def __init__(self):

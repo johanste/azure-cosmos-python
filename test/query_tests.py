@@ -1,7 +1,7 @@
 import unittest
 import uuid
-import azure.internal_cosmos.cosmos_client as cosmos_client
-import azure.internal_cosmos.documents as documents
+import internal.cosmos.cosmos_client as cosmos_client
+import internal.cosmos.documents as documents
 import test.test_config as test_config
 
 class QueryTest(unittest.TestCase):
